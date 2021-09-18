@@ -238,7 +238,6 @@ header .title {
 #sold-out h2, #sold-out h3 {
 	opacity: 0.5;
 }
-/* ____________________________________________ */
 .spec-product a img {
 	transition: all 0.2s linear;
 }
@@ -251,11 +250,11 @@ header .title {
 	width: 615px;
 	text-align: right;
 }
+/* ____________________________________________ */
 
 
 
-
-/* endless */
+/* Endless */
 .marquee-left {;
   margin-top: 200px;
   white-space: nowrap;
@@ -289,7 +288,7 @@ header .title {
 
 
 
-/* Right endless */
+/* Right Endless */
 .marquee-right {;
   margin-top: 250px;
   white-space: nowrap;
