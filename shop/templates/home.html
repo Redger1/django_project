@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<header>
+	<nav>
+		<h5>天照大御神</h5>
+		<a href="">new</a>
+		<a href="">oos</a>
+		<a href="">about</a>
+		<img src="{% static 'assets/Vector.svg' %}" alt="">
+	</nav>
+	<div class="title">
+		<h1>amaterasu</h1>
+		<h1 id='handmade'>handmade</h1>
+		<h1 id='art'>art</h1>
+
+		<div class="rectangle1"></div>
+		<div class="rect-back"></div>
+		<div class="rect-content">天照大御神</div>
+		<div class="rectangle2"></div>
+
+		<div class="rectangle1 second-rect"></div>
+		<div class="rect-back second-rect"></div>
+		<div class="rect-content second-rect-content">天照大御神</div>
+		<div class="rectangle2 second-rect"></div>
+	</div>
+
+	<section>
+		<div class="marquee">
+			<h3 class="marquee-repeat marquee-repeat-bigger"><span>new arrivals 新着</span></h3>
+			<h4 class="marquee-repeat marquee-repeat-smaller">new arrivals 新着</h4>
+		</div>
+	</section>
+	<script>
+		Array.from(document.getElementsByClassName('rect-content')).forEach(function(el) {
+			el.innerText = (el.innerText + ' ').repeat(15);
+		});
+
+		Array.from(document.getElementsByClassName('marquee-repeat-bigger')).forEach(function(el) {
+			el.innerText = (el.innerText + ' ').repeat(7);
+		});
+		Array.from(document.getElementsByClassName('marquee-repeat-smaller')).forEach(function(el) {
+			el.innerText = (el.innerText + ' ').repeat(14);
+		});
+	</script>
+</header>
+
+{% endblock content %}
