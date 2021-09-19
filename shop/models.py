@@ -29,7 +29,7 @@ class Product(models.Model):
 
 class CartProduct(models.Model):
 	user = models.ForeignKey('Customer', verbose_name = 'Customer', on_delete = models.CASCADE)
-	cart = models.ForeignKey('Cart', verbose_name = 'Cart', on_delete = models.CASCADE, related_name = '+')
+	cart = models.ForeignKey('Cart', verbose_name = 'Cart', on_delete = models.CASCADE)
 	product = models.ForeignKey(Product, verbose_name = 'Product', on_delete = models.CASCADE)
 	qty = models.PositiveIntegerField(default = 1)
 	final_price = models.DecimalField(max_digits = 9, decimal_places = 2, verbose_name = 'Totel price')
@@ -40,7 +40,7 @@ class CartProduct(models.Model):
 
 class Cart(models.Model):
 	owner = models.ForeignKey('Customer', verbose_name = 'Owner', on_delete = models.CASCADE)
-	products = models.ManyToManyField(CartProduct, blank = True)
+	products = models.ManyToManyField(CartProduct, blank = True, related_name = '+')
 	total_products = models.PositiveIntegerField(default = 0)
 	final_price = models.DecimalField(max_digits = 9, decimal_places = 2, verbose_name = 'Totel price')
 
