@@ -35,7 +35,7 @@ class CartProduct(models.Model):
 	final_price = models.DecimalField(max_digits = 9, decimal_places = 2, verbose_name = 'Totel price')
 
 	def __str__(self):
-		return "Cart product: {}".format{self.product.title}
+		return "Cart product: {}".format(self.product.title)
 
 
 class Cart(models.Model):
