@@ -1,0 +1,108 @@
+/* Header */
+header {
+	background-image: url("../assets/header_back.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+header nav {
+	display: flex;
+	justify-content: space-around;
+	color: #99001F;
+	margin-top: 24px;
+}
+header nav h5 {
+	color: #99001F;
+	font-family: Impact;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 34px;
+	text-transform: capitalize;
+}
+header nav a {
+	color: #99001F;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 100;
+	font-family: Impact;
+}
+header nav img {
+	height: 40px;
+	width: 40px;
+}
+header nav img:hover {
+	cursor: pointer;
+}
+header .title h1:first-child {
+	color: #99001F;
+}
+header #art {
+	margin-left: 500px;
+}
+header h1 {
+	text-align: center;
+	font-family: Impact;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 360px;
+	line-height: 290px;
+	text-transform: uppercase;
+}
+header .title {
+	margin-top: 100px;
+}
+.rectangle2 {
+	position: absolute;
+	width: 3000px;
+	height: 20px;
+	left: -30px;
+	top: 708px;
+
+	background: #510514;
+	transform: rotate(-9.02deg);
+}
+.rectangle1 {
+	position: absolute;
+	width: 3000px;
+	height: 20px;
+	left: -30px;
+	top: 650px;
+
+	background: #510514;
+	transform: rotate(-9.02deg);
+}
+.rect-content {
+	position: absolute;
+	left: -20px;
+	top: 634px;
+	font-size: 42px;
+	font-weight: 800;
+
+	white-space: nowrap;
+	color: black;
+	transform: rotate(-9.02deg);
+}
+.rect-back {
+	position: absolute;
+	width: 3000px;
+	height: 40px;
+	left: -30px;
+	top: 669px;
+
+	background: white;
+	transform: rotate(-9.02deg);
+}
+.rectangle1, .rectangle2, .rect-content, .rect-back {
+	z-index: -1;
+}
+
+.second-rect {
+	transform: rotate(20.98deg);
+	left: -150px;
+}
+.second-rect-content {
+	transform: rotate(20.98deg);
+	top: 716px;
+	left: -150px;
+}
+/*______________________________________*/

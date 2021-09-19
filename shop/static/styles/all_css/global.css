@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Impact";
+	src: url("../../fonts/Impact.ttf");
+}
+body {
+	background-color: black;
+	overflow-x: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
